@@ -5,6 +5,20 @@
 // Le premier nombre est plus grand si le premier nombre est plus grand que le deuxième
 // Le premier nombre est plus petit si le premier nombre est plus petit que le deuxième
 // Les deux nombres sont identiques si les deux nombres sont égaux
+
+function deuxNombres($nb1, $nb2){
+    if ($nb1 > $nb2) {
+     return $message = "Le premier nombre est plus grand ";
+    }
+   if ($nb1 < $nb2) {
+     return $message = "Le premier nombre est plus petit ";
+    }
+    if ($nb1 = $nb2) {
+     return $message = "Les deux nombres sont identiques ";
+    }
+}
+
+
 ?>
 
 <!DOCTYPE html>
@@ -15,6 +29,6 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <p><?= deuxNombres(10, 10) ?></p>
 </body>
 </html>

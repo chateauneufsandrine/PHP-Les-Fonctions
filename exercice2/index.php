@@ -1,6 +1,12 @@
 <?php 
 // EXERCICE2/////////////////////////////////////////////////////////////////////////////////////////////
 // Faire une fonction qui prend en paramètre une chaine de caractères et qui retourne cette même chaine
+
+function printString($message){
+    return $message;
+}
+
+
 ?>
 
 
@@ -12,6 +18,6 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <p><?= printString("Hello world") ?></p>
 </body>
 </html>

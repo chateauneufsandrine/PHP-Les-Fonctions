@@ -1,6 +1,11 @@
 <?php 
 // EXERCICE1////////////////////////////////////////////////////////////////////
 // Faire une fonction qui retourne true.
+
+function returnTrue(){
+    return true;
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -12,5 +17,8 @@
 </head>
 <body>
     
+<p><?= returnTrue() ?></p>
+
+
 </body>
 </html>

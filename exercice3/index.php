@@ -2,6 +2,10 @@
 // EXERCICE3////////////////////////////////////////////////////////////////////////////////////////
 // Faire une fonction qui prend en paramètre 
 // deux chaines de caractères et qui revoit la concaténation de ces deux chaines
+function concatenation($message1, $message2){
+    return $message1 . $message2;
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -12,6 +16,7 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <p><?= concatenation("Hello ", "les p'tits crotales") ?></p>
+    <p><?= concatenation("Demain ", "j'arrête !") ?></p>
 </body>
 </html>
