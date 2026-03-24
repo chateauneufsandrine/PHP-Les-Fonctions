@@ -2,6 +2,12 @@
 // EXERCICE5///////////////////////////////////////////////////////////////////////////////////////
 // Faire une fonction qui prend en paramètre un nombre 
 // et une chaine de caractères et qui renvoit la concaténation de ces deux paramètres
+
+function concatenation($nombre, $printable){
+    return $nombre . $printable;
+}
+
+
 ?>
 
 <!DOCTYPE html>
@@ -13,5 +19,7 @@
 </head>
 <body>
     
+<p><?= concatenation(5, " Hello world") ?></p>
+
 </body>
 </html>

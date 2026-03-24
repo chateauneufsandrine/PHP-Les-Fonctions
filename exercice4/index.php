@@ -8,13 +8,13 @@
 
 function deuxNombres($nb1, $nb2){
     if ($nb1 > $nb2) {
-     return $message = "Le premier nombre est plus grand ";
+     return "Le premier nombre est plus grand ";
     }
    if ($nb1 < $nb2) {
-     return $message = "Le premier nombre est plus petit ";
+     return "Le premier nombre est plus petit ";
     }
     if ($nb1 = $nb2) {
-     return $message = "Les deux nombres sont identiques ";
+     return "Les deux nombres sont identiques ";
     }
 }
 
