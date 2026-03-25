@@ -1,6 +1,7 @@
 <?php 
 // EXERCICE7/////////////////////////////////////////////////////////////////////////////////////////////////
-// Faire une fonction qui prend deux paramètres : l'âge et le genre d'une personne. Le genre peut être :
+// Faire une fonction qui prend deux paramètres : l'âge et le genre d'une personne. 
+// Le genre peut être :
 
 // Homme
 // Femme
@@ -11,6 +12,22 @@
 // Vous êtes une femme et vous êtes majeur
 // Vous êtes une femme et vous êtes mineur
 // Gérer tous les cas
+function returnGenreAge ($age, $genre){
+    if ($genre === "homme" && $age >=18) {
+        return "Vous êtes un homme et vous êtes majeur";
+    }
+    if ($genre === "homme" && $age<18) {
+    return "Vous êtes un homme et vous êtes mineur";
+    }
+    if ($genre === "femme" && $age>=18) {
+    return "Vous êtes une femme et vous êtes majeur";
+    }
+    if ($genre === "homme" && $age<18) {
+    return "Vous êtes une femme et vous êtes mineur";
+    }
+}
+
+
 ?>
 
 <!DOCTYPE html>
@@ -21,6 +38,6 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h2><?= returnGenreAge (42, "femme") ?></h2>
 </body>
 </html>
